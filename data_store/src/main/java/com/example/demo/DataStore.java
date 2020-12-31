@@ -2,8 +2,9 @@ package com.example.demo;
 
 import java.util.*;
 
-
+//Data repository containing a list to store the user data
 public class DataStore {
+	
 	 List<User> list = new ArrayList<>();
 	 
 	
@@ -12,10 +13,13 @@ public class DataStore {
 	{
 		return list;
 	}
-	
+	/*Creating key,Value Pair,
+	if create() is invoked for an existing key,then controller method
+		displays appropriate error message*/
 	public boolean addUser(User user)
 	{
-		//Checking if create() is invoked for an existing key,then controller method throws an exception
+		 
+		
 		for(User i:list)
 		{
 			if(user.getKey().equals(i.getKey()) == true )
@@ -27,6 +31,8 @@ public class DataStore {
 		
 		}
 	
+	//Reading from user based on input key
+	//If match is found then user information is returned
 	public User getUser(String key)
 	{
 		for(User user:list)
@@ -36,7 +42,9 @@ public class DataStore {
 		}
 		return null;
 	}
-	
+	/*Updating the user based on the input key,
+	if no matching key is found null is returned to
+	controller class*/
 	public Boolean updateUser(String key,User user)
 	{
 		for(User i:list)
@@ -53,6 +61,7 @@ public class DataStore {
 		return null;
 		
 	}
+	//Deleting user based on the input key.
 	
 	public boolean deleteUser(String key)
 	{
