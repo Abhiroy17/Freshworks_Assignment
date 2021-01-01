@@ -1,18 +1,31 @@
 # Freshworks_Assignment
-##############################################################################
-For source codes
+-->Please open the testing with snapshots.doc file to see
+how various methods work.
+
+*For source codes*
 Go to---->
-data_store>src>main>java>com>example>demo>DataStore.java
-##it contains data repository source code##
+
+-->data_store>src>main>java>com>example>demo>DataStore.java
+(it contains data repository source code)
+
+--> The above demo folder contains other source codes.
+(REST controller,Data Store and User class)
 
 SimpleController.java
-##It is the rest controller codes for the application##
+(It has the rest controller codes for the application)
+Instructions:
+-->Run the DataStoreApplication.java file using spring tool suite 4
 
-###Run the DataStoreApplication.java file using spring tool suite###
+-->Hit the API's using Postman.
 
-####hit the API's using postman####
-Please open the testing with snapshots.doc file to see how various methods work
-Thanks for viewing :)
-Created by Abhijit Roy
-###############################################################################
+Tools used:
+-->Spring Tool Suite 4
+-->Postman
+
+Language Used:
+--> Java
+
+/*Thanks for viewing :)
+Created by Abhijit Roy*/
+
 
